@@ -1,0 +1,79 @@
+{
+    "stdin" : [],
+    "infile" : [
+        "--force",
+        "-a",
+        "0",
+        "-m",
+        "ALGO_ID",
+        "--markov-disable",
+        "--session=ocl",
+        "-o",
+        "OUT_FILE",
+        "--outfile-format=3",
+        "--potfile-disable",
+        "HASH_FILE",
+        "IN_FILE"
+    ],
+    "generator" : [
+        {
+            "name" : "general",
+            "config" : [
+                "-m",
+                "ALGO_ID",
+                "-a",
+                "3",
+                "--force",
+                "--markov-disable",
+                "--session=ocl",
+                "-o",
+                "OUT_FILE",
+                "--outfile-format=3",
+                "--potfile-disable",
+                "-s",
+                "START",
+                "-l",
+                "OFFSET",
+                "-i",
+                "--increment-min=LEN_MIN",
+                "--increment-max=LEN_MAX",
+                "CHAR1",
+                "CHAR2",
+                "CHAR3",
+                "CHAR4",
+                "HASH_FILE",
+                "MASK"
+            ]
+        },
+        {
+            "name" : "markov",
+            "config" : [
+                "-m",
+                "ALGO_ID",
+                "-a",
+                "3",
+                "--force",
+                "--markov-hcstat=DEP_GEN",
+                "CONF_GEN",
+                "--session=ocl",
+                "-o",
+                "OUT_FILE",
+                "--outfile-format=3",
+                "--potfile-disable",
+                "-s",
+                "START",
+                "-l",
+                "OFFSET",
+                "-i",
+                "--increment-min=LEN_MIN",
+                "--increment-max=LEN_MAX",
+                "CHAR1",
+                "CHAR2",
+                "CHAR3",
+                "CHAR4",
+                "HASH_FILE",
+                "MASK"
+            ]
+        }
+    ]
+}
