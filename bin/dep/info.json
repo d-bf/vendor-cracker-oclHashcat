@@ -18,7 +18,7 @@
     "generator" : [
         {
             "name" : "general",
-            "config" : [
+            "arg" : [
                 "-m",
                 "ALGO_ID",
                 "-a",
@@ -47,7 +47,7 @@
         },
         {
             "name" : "markov",
-            "config" : [
+            "arg" : [
                 "-m",
                 "ALGO_ID",
                 "-a",
