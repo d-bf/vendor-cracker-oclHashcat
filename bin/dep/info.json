@@ -74,6 +74,36 @@
                 "HASH_FILE",
                 "MASK"
             ]
-        }
+        },
+        {
+            "name" : "policy",
+            "arg" : [
+                "--generator-policy",
+                "-m",
+                "ALGO_ID",
+                "-a",
+                "3",
+                "--force",
+                "--markov-disable",
+                "--session=ocl",
+                "-o",
+                "OUT_FILE",
+                "--outfile-format=3",
+                "--potfile-disable",
+                "-s",
+                "START",
+                "-l",
+                "OFFSET",
+                "-i",
+                "--increment-min=LEN_MIN",
+                "--increment-max=LEN_MAX",
+                "CHAR1",
+                "CHAR2",
+                "CHAR3",
+                "CHAR4",
+                "HASH_FILE",
+                "MASK"
+            ]
+        },
     ]
 }
